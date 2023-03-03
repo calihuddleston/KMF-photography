@@ -1,19 +1,22 @@
 import React from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { Link } from "react-router-dom";
+import Home from "../pages/Home";
+import Contact from "./Contact";
 
 export default function Header() {
   return (
-    <section>
+    <div>
       <nav>
         <ul>
           <li>
-            <a>HOME</a>
+            <Link to="/" element={<Home />} className="page-links">HOME</Link>
           </li>
           <li>
             <a>ABOUT</a>
           </li>
           <li>
-            <a>CONTACT</a>
+            <Link to="/contact" element={<Contact />} className="page-links">CONTACT</Link>
           </li>
         </ul>
 
@@ -44,22 +47,11 @@ export default function Header() {
               </div>
             </li>
           </div>
-
           <li>
             <a>BOOK</a>
           </li>
         </ul>
       </nav>
-
-      <header></header>
-      <div>
-        <p className="quote">"A GOOD SNAPSHOT KEEPS</p>
-        <p className="quote">A MOMENT FROM RUNNING AWAY"</p>
-        <div id="box">
-          <div id="border-bottom"></div>
-        </div>
-        <p className="quote title">Family, Portrait, & Wedding Photography</p>
-      </div>
-    </section>
+    </div>
   );
 }
