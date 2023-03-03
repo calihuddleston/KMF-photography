@@ -73,12 +73,22 @@ li {
   text-decoration: none;
 }
 
+.page-links:hover {
+  color: white;
+}
+
 h1 {
   display: flex;
   justify-content: center;
   align-self: center;
   font-family: 'Brittany Signature', sans-serif;
   font-size: 30px;
+  animation: fade-in 4s linear;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .dropdown {
@@ -134,9 +144,9 @@ nav a:hover, .dropdown:hover .dropbtn {
 
 header {
   position: relative;
-  height: 700px;
-  max-height: 700px;
-  min-height: 500px; 
+  height: 900px;
+  max-height: 900px;
+  min-height: 700px; 
   width: 100%;
   background:
     url('./assets/header.jpg') 
@@ -200,7 +210,7 @@ span {
   display: flex;
   flex-direction: row;
   position: relative;
-  bottom: 150px;
+  bottom: 100px
 }
 
 img {
@@ -220,8 +230,6 @@ img {
 #section-two {
   background-color: #B1BDB9;
   color: white;
-  position: relative;
-  bottom: 140px;
   font-family: 'Cormorant Garamond', serif;
   font-size: 30px;
   padding: 80px;
@@ -230,4 +238,210 @@ img {
 #memories {
   float: right;
   margin-bottom: 70px;
+}
+
+#section-three {
+  display: flex;
+  flex-direction: row;
+  background-color: #915E3E;
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+  padding: 50px;
+}
+
+#about-section {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-left: solid 2px white;
+  margin: 20px
+}
+
+#welcome {
+  font-size: 80px;
+  text-align: center;
+}
+
+#description {
+font-size: 20px;
+padding: 30px;
+text-align: end;
+line-height: 50px;
+}
+
+#morebtn {
+  border: none;
+  background-color: #282c34;
+  color: white;
+  border-radius: 50px;
+  font-family: 'Cormorant Garamond', serif;
+  padding: 15px 40px;
+  position: relative;
+  left: 450px;
+  bottom: 20px;
+}
+
+#section-four {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+#contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contactbtn {
+  background-color: #67696c;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  font-family: 'Cormorant Garamond', serif;
+  padding: 15px 40px;
+}
+
+#adventure {
+  font-size: 80px;
+  padding: 50px
+}
+
+#contactbtn, #sendbtn:hover{
+  background-color: #282c34cc;
+}
+
+#morebtn, #click:hover  {
+  background-color: #2f3032f1;
+}
+/* Footer */
+footer {
+  background-color: #B1BDB9;
+}
+
+/* Contact */
+#contact-page {
+  position: relative;
+  height: 500px;
+  max-height: 500px;
+  min-height: 300px; 
+  width: 100%;
+  background:
+  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2522584033613445) 0%),
+    url('./assets/schedule.jpeg') 
+    no-repeat center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#schedule-section{
+  position: relative;
+  top: 400px;
+  color: white;
+  font-family: 'Brittany Signature', sans-serif;
+  font-weight: 500;
+  background-color:#B1BDB9;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#schedulequestion {
+  font-size: 60px;
+}
+
+#click{
+  font-size: 15px;
+  border: none;
+  background-color: #282c34;
+  color: white;
+  border-radius: 50px;
+  font-family: 'Cormorant Garamond', serif;
+  padding: 15px 40px;
+  width: 10%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+  position: relative;
+  top: 450px;
+  padding: 50px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  border: solid 2px #915E3E;
+  border-radius: 10px;
+}
+
+
+input {
+  margin: 10px;
+  border-radius: 5px;
+  border: solid 2px #915E3E;
+  padding: 10px
+}
+
+textarea {
+  margin: 10px;
+  border-radius: 5px;
+  border: solid 2px #915E3E;
+  padding: 25px;
+  text-align: start;
+}
+
+#sendbtn {
+  background-color: #915E3E;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  font-family: 'Cormorant Garamond', serif;
+  padding: 15px 40px;
+  width: 20%;
+  margin: auto;
+}
+
+#contactme {
+  font-size: 50px;
+  color: black;
+  animation: none;
+}
+
+.block {
+padding: 200px;
+font-family: 'Cormorant Garamond', serif;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+height: 590px;
+max-height: 590px;
+min-height: 390px; 
+width: 100%;
+background:
+  url('./assets/line.png') 
+  no-repeat;
+background-size: cover !important;
+-webkit-background-size: cover !important;
+margin-bottom: 0px
+}
+
+.quotation {
+  font-size: 40px;
+}
+
+.author {
+  font-size: 20px;
+  text-align: start;
+  position: relative;
+  top: 150px;
 }
