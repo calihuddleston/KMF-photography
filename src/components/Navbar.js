@@ -5,10 +5,11 @@ import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import About from "../pages/About"
 import Book from "../pages/Booking";
+import logo from "../assets/logo.png"
 
 export default function Navbar() {
   return (
-    <div>
+    <div id="navbar">
       <nav>
         <ul>
           <li>
@@ -22,30 +23,30 @@ export default function Navbar() {
           </li>
         </ul>
 
-        <h1>Kenzie Marie Photography</h1>
+        <img src={logo} height="150px"></img>
 
         <ul>
-          <div className="dropdown">
+          <div className="dropdowns">
             <li>
               <button className="dropbtn">
                 PORTFOLIO <MdKeyboardArrowDown />
               </button>
-              <div className="dropdown-content">
+              <div className="dropdowns-content">
                 <a>COUPLES</a>
                 <a>WEDDINGS</a>
                 <a>PORTRAITS</a>
               </div>
             </li>
           </div>
-          <div className="dropdown">
+          <div className="dropdowns">
             <li>
               <button className="dropbtn">
                 INFO <MdKeyboardArrowDown />
               </button>
-              <div className="dropdown-content">
+              <div className="dropdowns-content">
                 <a>TESTIMONIALS</a>
                 <a>WEDDINGS</a>
-                <a>EXPERIENCE</a>
+                <a>INVESTMENT</a>
               </div>
             </li>
           </div>

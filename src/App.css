@@ -1,55 +1,43 @@
 @import url('https://fonts.cdnfonts.com/css/brittany-signature');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
-@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@1,6..96&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
 
 .App {
   text-align: center;
+  scroll-behavior: smooth;
+  scroll-margin-top: 2em;
+}
+body {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  width: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  background: white; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#67696c; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#282c34;
 }
 
 /* Header */
-
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color: #282c34;
-  color: white;
-  padding: 10px;
+  background-color:#98a39f;
+  /* padding: 10px; */
 }
 
 ul {
@@ -81,9 +69,9 @@ h1 {
   display: flex;
   justify-content: center;
   align-self: center;
-  font-family: 'Brittany Signature', sans-serif;
-  font-size: 30px;
-  animation: fade-in 4s linear;
+  font-family: 'Brittany Signature', serif;
+  font-size: 25px;
+  animation: fade-in 2s linear;
 }
 
 @keyframes fade-in {
@@ -91,14 +79,14 @@ h1 {
   to { opacity: 1; }
 }
 
-.dropdown {
+.dropdowns {
   display: flex;
   flex-direction: row;
   align-self: center;
   overflow: hidden;
 }
 
-.dropdown, .dropbtn {
+.dropdowns .dropbtn {
   font-size: 15px;
   border: none;
   outline: none;
@@ -108,42 +96,43 @@ h1 {
   margin: 0;
 }
 
-nav a:hover, .dropdown:hover .dropbtn {
+/* nav a:hover, .dropdowns:hover .dropbtn, .page-links:hover {
   background-color: #B1BDB9;
   border-radius: 2px;
   color: black;
-}
+} */
 
-.dropdown-content {
-  display: none;
+.dropdowns-content {
+  display: none; /*for testing- restore to "none"*/
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 1 !important;
 }
 
-.dropdown-content a {
+.dropdowns-content a {
   float: none;
-  color: black;
+  color: black !important;
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
+  display: block !important;
   text-align: left;
 }
 
-.dropdown-content a:hover {
+.dropdowns-content a:hover {
   background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.dropdowns:hover .dropdowns-content {
+  display: block !important;
 }
 
 /* Home */
 
 header {
   position: relative;
+  bottom: 15px;
   height: 900px;
   max-height: 900px;
   min-height: 700px; 
@@ -159,13 +148,39 @@ header {
 .quote {
   font-family: 'Cormorant Garamond', serif;
   color: white;
-  position: relative;
-  bottom: 275px;
+ position: relative;
+ top: 500px;
   display: flex;
   justify-content: flex-end;
   margin: 15px;
   margin-bottom: 1px;
   font-size: 35px;
+}
+
+#featured {
+  background-color: white;
+  padding: 90px;
+  border-radius: 5px;
+}
+
+#featured-text {
+  display: flex;
+  justify-self: flex-start;
+  font-family: 'Brittany Signature', sans-serif;
+  margin-left: 20px;
+}
+
+#as-featured {
+  font-size: 40px;
+}
+
+#featured-images {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  border-bottom: #282c34 solid 1px;
+  border-top:#282c34 solid 1px;
+  margin: 10px 0px;
 }
 
 #box {
@@ -176,9 +191,9 @@ header {
 #border-bottom {
   display: flex;
   justify-content: flex-end;
-  position: relative;
-  bottom: 250px;
   border-bottom: solid 2px white;
+  position: relative;
+  top: 500px;
 }
 
 .title {
@@ -188,8 +203,8 @@ header {
 }
 
 #capture {
-  background-color: #915E3E;
-  padding: 25px;
+  background-color: #2f3135;
+  padding: 45px;
   margin-left: 8px;
   border-radius: 5px;
   display: flex;
@@ -209,13 +224,11 @@ span {
 #section-one {
   display: flex;
   flex-direction: row;
-  position: relative;
-  bottom: 100px
+  padding: 15px 0px;
 }
 
 img {
   border-radius: 5px;
-  margin: 8px;
 }
 
 #three {
@@ -232,21 +245,22 @@ img {
   color: white;
   font-family: 'Cormorant Garamond', serif;
   font-size: 30px;
-  padding: 80px;
+  padding: 50px;
 }
 
 #memories {
   float: right;
-  margin-bottom: 70px;
+  margin: 15px;
 }
 
 #section-three {
   display: flex;
   flex-direction: row;
-  background-color: #915E3E;
+  background-color: #2f3135;
   font-family: 'Cormorant Garamond', serif;
   color: white;
-  padding: 50px;
+  padding: 60px;
+
 }
 
 #about-section {
@@ -255,7 +269,9 @@ img {
   justify-content: space-evenly;
   flex-direction: column;
   border-left: solid 2px white;
-  margin: 20px
+  padding: 45px;
+  align-items: center;
+  margin: 0px 40px;
 }
 
 #welcome {
@@ -265,7 +281,6 @@ img {
 
 #description {
 font-size: 20px;
-padding: 30px;
 text-align: end;
 line-height: 50px;
 }
@@ -277,17 +292,16 @@ line-height: 50px;
   border-radius: 50px;
   font-family: 'Cormorant Garamond', serif;
   padding: 15px 40px;
-  position: relative;
-  left: 450px;
-  bottom: 20px;
 }
 
 #section-four {
   display: flex;
   flex-direction: row;
   font-family: 'Cormorant Garamond', serif;
+  padding: 10px;
 }
 
+/* PROBABLY OLD - IN TIME-OUT */
 #contact-section {
   display: flex;
   justify-content: center;
@@ -296,7 +310,7 @@ line-height: 50px;
 }
 
 #contactbtn {
-  background-color: #67696c;
+  background-color: #8D8A83;
   border: none;
   color: white;
   border-radius: 50px;
@@ -309,48 +323,67 @@ line-height: 50px;
   padding: 50px
 }
 
-#contactbtn, #sendbtn:hover{
-  background-color: #282c34cc;
-}
-
 #morebtn, #click:hover  {
-  background-color: #2f3032f1;
+  background-color: #8D8A83;
 }
 /* Footer */
-footer {
-  background-color: #B1BDB9;
+.feets {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  color: white;
+  align-items: center;
+  background-color: #8D8A83;
+  padding: 30px;
+}
+
+.social-links {
+ margin: 15px;
+ color: white
+}
+
+#smooth-scroll {
+  color: white;
+  scroll-behavior: smooth;
+}
+
+#myBtn {
+  background: none;
+  border: none;
+  color: white;
 }
 
 /* Contact */
 #contact-page {
-  position: relative;
-  height: 500px;
-  max-height: 500px;
-  min-height: 300px; 
-  width: 100%;
-  background:
-  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2522584033613445) 0%),
-    url('./assets/schedule.jpeg') 
-    no-repeat center;
-  background-size: cover !important;
-  -webkit-background-size: cover !important;
   text-align: center;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
 }
 
+#schedule-image {
+  background:
+  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2522584033613445) 0%),
+    url('./assets/schedule.jpeg') 
+    no-repeat center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  height: 500px;
+  max-height: 500px;
+  min-height: 300px; 
+  width: 100%;
+}
+
 #schedule-section{
-  position: relative;
-  top: 400px;
   color: white;
+  background-color:#2f3135;
   font-family: 'Brittany Signature', sans-serif;
   font-weight: 500;
-  background-color:#B1BDB9;
-  padding: 50px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  padding: 40px;
 }
 
 #schedulequestion {
@@ -360,7 +393,7 @@ footer {
 #click{
   font-size: 15px;
   border: none;
-  background-color: #282c34;
+  background-color: #8D8A83;
   color: white;
   border-radius: 50px;
   font-family: 'Cormorant Garamond', serif;
@@ -370,44 +403,40 @@ footer {
   margin-top: 15px;
 }
 
-form {
+#contact-form {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 30px auto;
   width: 50%;
-  position: relative;
-  top: 450px;
   padding: 50px;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
-  border: solid 2px #915E3E;
+  border: solid 1px #8D8A83;
   border-radius: 10px;
 }
 
 
-input {
+#contact-name, #contact-email {
   margin: 10px;
   border-radius: 5px;
-  border: solid 2px #915E3E;
+  border: solid 1px #8D8A83;
   padding: 10px
 }
 
-textarea {
+#contact-textarea {
   margin: 10px;
   border-radius: 5px;
-  border: solid 2px #915E3E;
+  border: solid 1px #8D8A83;
   padding: 25px;
   text-align: start;
 }
 
 #sendbtn {
-  background-color: #915E3E;
+  background-color: #8D8A83;
   border: none;
   color: white;
-  border-radius: 50px;
+  border-radius: 5px;
   font-family: 'Cormorant Garamond', serif;
-  padding: 15px 40px;
-  width: 20%;
+  padding: 5px 25px;
   margin: auto;
 }
 
@@ -445,3 +474,270 @@ margin-bottom: 0px
   position: relative;
   top: 150px;
 }
+
+#booking-section {
+  /* padding: 200px; */
+font-family: 'Cormorant Garamond', serif;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+flex-direction: column;
+height: 800px;
+max-height: 800px;
+min-height: 600px; 
+width: 100%;
+background:
+linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2522584033613445) 0%),
+  url('./assets/beach2.jpg') 
+  no-repeat;
+background-size: cover !important;
+-webkit-background-size:cover !important;
+background-position-y: 70%;
+margin-bottom: 0px
+}
+
+#booking-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  /* position: relative;
+  top: 600px; */
+  border: #8D8A83 solid 1px;
+  margin: 20px auto;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+#request {
+    /* position: relative;
+    top: 590px; */
+    color: white;
+    font-family: 'Brittany Signature', sans-serif;
+    font-weight: 500;
+    background-color:#2f3135;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#book {
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+#fill {
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #8D8A83;
+  padding: 10px 15px;
+  border-radius: 50px;
+}
+
+#name-section {
+  display: flex;
+  flex-direction: row;
+}
+
+#first-name, #last-name {
+  margin: 0 5px;
+  width: 250px;
+}
+
+#column-one {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+#column-two {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+select, textarea, input{
+  border:#8D8A83 1px solid;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.myRow {
+  display: flex;
+  flex-direction: row;
+}
+
+#booking-title {
+  font-size: 50px;
+  color: black;
+  animation: none;
+}
+
+.text-danger {
+  font-size: 30px;
+}
+
+label {
+  margin: 15px 5px;
+}
+
+#submitBtn {
+  padding: 5px 25px;
+  color: white;
+  background-color: #8D8A83;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+#designed-by {
+  text-align: center;
+  font-size: 12px;
+}
+
+#dreamsite {
+  text-decoration: none;
+  color:#282c34;
+}
+/* .radio-label::before {
+  content: "";
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.1rem;
+} */
+
+/* About Page */
+#about-section-one {
+  background-color: #2f3135;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Cormorant Garamond', serif;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+#about-img {
+  margin: 15px 45px;
+}
+
+#story {
+  margin: 100px;
+  text-align: center;
+  width: 700px;
+}
+
+#mine {
+  font-size: 50px;
+  border-bottom: solid 1px white;
+  margin-bottom: 30px;
+
+}
+
+#story-paragraph {
+  text-align: left;
+  width: 700px;
+  line-height: 2.0em;
+  font-size: 18px;
+}
+
+#about-section-two {
+  background-color: #B1BDB9;
+  font-family: 'Cormorant Garamond', serif;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+justify-content: space-evenly;
+}
+
+#realtalk {
+  width: 500px;
+  font-weight: 600;
+}
+
+#realtalk-title {
+  font-size: 50px;
+}
+
+#about-list {
+  display: flex;
+  flex-direction: column;
+ align-items: flex-start;
+}
+
+#about-section-three {
+  padding: 150px;
+  font-family: 'Cormorant Garamond', serif;
+  display: flex;
+  justify-content: center;
+}
+
+#section-three-paragraph {
+  width: 800px;
+  text-align: center;
+}
+
+#about-section-four {
+  height: 800px;
+max-height: 800px;
+min-height: 600px; 
+width: 100%;
+background:
+linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2522584033613445) 0%),
+  url('./assets/camerabench.jpg') 
+  no-repeat;
+background-size: cover !important;
+-webkit-background-size:cover !important;
+background-position-y: center;
+color: white;
+font-family: 'Cormorant Garamond', serif;
+display: flex;
+flex-direction: row;
+padding: 50px;
+justify-content: space-evenly;
+align-items: center;
+}
+
+#schedule-with-me {
+  display: flex;
+  align-self: flex-start;
+  margin: 20px;
+}
+
+#schedule-text {
+  font-size: 75px;
+}
+
+#about-schedule-description {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+#about-schedule-paragraph {
+  font-size: 30px;
+}
+
+#schedule-button {
+  margin: auto;
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: none;
+  background-color:#8D8A83;
+  color: white;
+}
+/* #background-white {
+  background-color: white;
+  width: 100%;
+} */

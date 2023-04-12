@@ -5,22 +5,38 @@ import { BsSuitHeart } from "react-icons/bs"
 import captureImg from "../assets/captureImg.jpeg"
 import beach from "../assets/beach.jpg"
 import contactImg from "../assets/contactImg.jpeg"
-import book from "../assets/book.jpeg"
+import shoot from "../assets/shoot.jpg"
+import featureOne from "../assets/feature-one.png"
+import featureTwo from "../assets/feature-two.png"
+import featureThree from "../assets/feature-three.png"
 import Slideshow from "../components/Slideshow";
 import Contact from "./Contact";
 
 export default function Home () {
     return (
         <section>
-            <header></header>
-      <div>
-        <p className="quote">"A GOOD SNAPSHOT KEEPS</p>
-        <p className="quote">A MOMENT FROM RUNNING AWAY"</p>
-        <div id="box">
-          <div id="border-bottom"></div>
-        </div>
-        <p className="quote title">Family, Portrait, & Wedding Photography</p>
-      </div>
+            <header>
+            <div>
+                    <p className="quote">"A GOOD SNAPSHOT KEEPS</p>
+                    <p className="quote">A MOMENT FROM RUNNING AWAY"</p>
+                    <div id="box">
+                    <div id="border-bottom"></div>
+                    </div>
+                    <p className="quote title">Family, Portrait, & Wedding Photography</p>
+                </div>
+            </header>
+
+            <div id="featured">
+                <div id="featured-text">
+                    <h2 id="as-featured">As Featured In...</h2>
+                </div>
+                <div id="featured-images">
+                    <img src={featureOne} height="150px"></img>
+                    <img src={featureTwo} height="450px"></img>
+                    <img src={featureThree} height="450px;"></img>
+                </div>
+            </div>
+    
             <div id="section-one">
                 <img src={beach} height="900px"></img>
                 <div id="capture">
@@ -43,8 +59,10 @@ export default function Home () {
                 <figcaption className="blockquote-footer author">Ralph Waldo Emerson</figcaption>
             </figure>
             <div id="section-three">
+            {/* <div id="background-white"></div> */}
                 <div>
-                    <img src={book} height="500px"></img>
+                    <img src={shoot} height="900px"></img>
+                    
                 </div>
                 <div id="about-section">
                     <h2 id="welcome">WELCOME, MY NAME IS <span>Mackenzie</span></h2>
@@ -58,9 +76,9 @@ export default function Home () {
             <div id="section-four">
                 <div id="contact-section">
                     <p id="adventure">ARE YOU READY FOR YOUR NEXT ADVENTURE?</p>
-                    <div>
+            
                     <button id="contactbtn"><Link to="/contact" element={<Contact />} className="page-links">CONTACT ME</Link></button>
-                    </div>
+                  
                 </div>
                 <div>
                     <img src={contactImg} height="700px"></img>

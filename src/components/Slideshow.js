@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import example2 from "../assets/example2.jpeg"
 import engagement from "../assets/engagement.jpg"
-
 import couple from "../assets/couple.jpeg"
 import portrait from "../assets/portrait.jpeg"
 import family from "../assets/family.jpeg"
