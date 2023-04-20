@@ -8,8 +8,9 @@
   scroll-behavior: smooth;
   scroll-margin-top: 2em;
 }
-body {
+html {
   scroll-behavior: smooth;
+ 
 }
 
 ::-webkit-scrollbar {
@@ -741,3 +742,232 @@ align-items: center;
   background-color: white;
   width: 100%;
 } */
+
+/* couples */
+#couples-section-one, #weddings-section-one {
+  display: flex;
+  flex-direction: row;
+  background-color: #2f3135;
+  color: white;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+#couples-text, #weddings-text {
+  font-size: 25px;
+  width: 800px;
+}
+
+#couples-title, #weddings-title {
+  font-family: 'Brittany Signature', sans-serif;
+  font-size: 75px;
+}
+
+#weddings-section-two {
+  padding: 150px;
+}
+
+#weddings-section-three {
+  background-color: #B1BDB9;
+  padding: 30px;
+}
+
+#wedding-images {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#wedding-quote {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  width: 800px;
+  margin: 150px auto;
+  font-weight: 600;
+}
+
+#count-down-header {
+  height: 700px;
+max-height: 700px;
+min-height: 500px; 
+width: 100%;
+background:
+linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2522584033613445) 0%),
+  url('./assets/about.png') 
+  no-repeat;
+background-size: cover !important;
+-webkit-background-size:cover !important;
+background-position-y: center;
+color: white;
+font-family: 'Cormorant Garamond', serif;
+display: flex;
+flex-direction: row;
+padding: 50px;
+justify-content: space-evenly;
+align-items: center;
+background-position-y: -550px;
+}
+
+#count-down {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 150px;
+  font-size: 55px;
+  background-color: #2f3135;
+  text-align: center;
+}
+
+#count-text {
+  color: white;
+  font-size: 25px;
+  font-family: 'Cormorant Garamond', serif;
+  width: 600px;
+  width: 100%;
+  text-align: center;
+  padding: 45px;
+  border-radius: 5px;
+  
+}
+
+#count-title {
+  font-size: 55px;
+  font-family: 'Brittany Signature', sans-serif;
+  text-align: center;
+}
+
+#time-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.time {
+  background-color: rgba(255, 255, 255, 0.943);
+  border-radius: 5px;
+  padding: 50px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.time-stamp {
+  font-size: 25px;
+  font-family: 'Brittany Signature', sans-serif;
+}
+
+#concerns {
+  padding: 150px;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+}
+
+#concern-title {
+  font-family: 'Brittany Signature', sans-serif;
+  font-size: 40px;
+}
+
+#concernbtn {
+  background-color: #282c34;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-family: 'Cormorant Garamond', serif;
+  padding: 5px 25px;
+}
+
+@media screen and (max-width: 1665px) {
+  #count-down-header {
+    background-position-y: -350px;
+  }
+
+  #count-down {
+    padding: 75px;
+  }
+
+  .time {
+    padding: 35px;
+    margin: 0px 15px;
+  }
+}
+
+@media screen and (max-width: 1249px) {
+  #count-down-header {
+    background-position-y: -250px;
+  }
+
+  #count-text {
+    font-size: 15px;
+    margin: 0px 15px;
+  }
+
+  #count-title {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 1035px) {
+  #count-down-header {
+    background-position-y: -250px;
+  }
+
+  #count-text {
+    font-size: 15px;
+    margin: 0px 15px;
+
+  }
+
+  #count-down {
+    padding: 75px;   
+  }
+
+  .time {
+    padding: 15px;
+    width: 300px;
+    margin: 0px 5px;
+  }
+
+  #contact-form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #count-down-header {
+    height: 300px;
+max-height: 300px;
+min-height: 100px; 
+  }
+}
+
+@media screen and (max-width: 570px) {
+  #count-down-header {
+    background-position-y: 0px;
+  }
+
+  #count-down {
+    padding: 5px;
+  }
+
+  #count-text {
+    margin: 0px 0px;
+    padding: 25px;
+  }
+
+  .time {
+    padding: 5px;
+    width: 300px;
+    margin: 0px 2px;
+  }
+  
+  #concerns {
+    padding: 10px;
+    margin: 20px 0px;
+  }
+
+  #concern-title {
+    font-size: 30px;
+  }
+}

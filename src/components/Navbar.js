@@ -6,12 +6,14 @@ import Contact from "../pages/Contact";
 import About from "../pages/About"
 import Book from "../pages/Booking";
 import logo from "../assets/logo.png"
+import Couples from "../pages/Couples";
+import Weddings from "../pages/Weddings";
 
 export default function Navbar() {
   return (
     <div id="navbar">
       <nav>
-        <ul>
+        {/* <ul>
           <li>
             <Link to="/" element={<Home />} className="page-links">HOME</Link>
           </li>
@@ -21,19 +23,19 @@ export default function Navbar() {
           <li>
             <Link to="/contact" element={<Contact />} className="page-links">CONTACT</Link>
           </li>
-        </ul>
+        </ul> */}
 
         <img src={logo} height="150px"></img>
 
-        <ul>
+        {/* <ul>
           <div className="dropdowns">
             <li>
               <button className="dropbtn">
                 PORTFOLIO <MdKeyboardArrowDown />
               </button>
               <div className="dropdowns-content">
-                <a>COUPLES</a>
-                <a>WEDDINGS</a>
+                <Link to="/couples" element={<Couples />}>COUPLES</Link>
+                <Link to="/weddings" element={<Weddings />}>WEDDINGS</Link>
                 <a>PORTRAITS</a>
               </div>
             </li>
@@ -53,7 +55,7 @@ export default function Navbar() {
           <li>
             <Link to="/booking" element={<Book />} className="page-links">BOOK</Link>
           </li>
-        </ul>
+        </ul> */}
       </nav>
     </div>
   );

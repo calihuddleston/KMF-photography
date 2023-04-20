@@ -22,26 +22,22 @@ export default function Book () {
 
     const submitForm = (e) => {
         e.preventDefault();
-
-        //TODO: Contract stuff goes here
-    }
-
-    async function sendEmail() {
+        // TODO: Contract stuff goes here
         emailjs
         .send(
-            "",//serviceID (the emailJS account you want to use)
-            "",//templateID (the template, saved on your emailJS account, that you want to use)
+            "service_bfv7dw7",//serviceID (the emailJS account you want to use)
+            "template_99o3ssq",//templateID (the template, saved on your emailJS account, that you want to use)
             {  //templateParams (the values you want fed into that template - names must match those on the template)
                 first_name: firstName.current.value,
                 last_name: lastName.current.value,
                 email: email.current.value,
                 phone_number: phoneNumber.current.value,
-                date: date.current.value,
+                date: datePreference === 'true' ? date.current.value : "I'm flexible", //note: Date will be YYYY-MM-DD
                 location: location.current.value,
                 session: session.current.value,
                 response: response.current.value,
             },
-            "" //public key - optional, can be set with emailjs.init()
+            "VJ7AN38eOcKTQ89-7" //public key - optional, can be set with emailjs.init()
         )
     }
 
@@ -64,7 +60,7 @@ export default function Book () {
                         </div>
                         <label>Phone Number (Optional):</label>
                         <div>
-                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Phone Number" ref={phoneNumber}></input>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="XXX-XXX-XXXX" ref={phoneNumber}></input>
                         </div>
                         <div className="myRow">
                             <input type="radio" className="radio" name="dateChoice" value={false} onChange={handleInputChange}></input>

@@ -1,18 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 import { BsArrowUp } from "react-icons/bs"
 
 
 function Feets () {
-    let topScroll = document.getElementById("myBtn");
+    let topScroll = useRef(null);
 
     window.onscroll = function() {scrollFunction ();}
 
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            topScroll.style.display = 'block';
+            topScroll.current.style.display = 'block';
         } else {
-            topScroll.style.display = 'none';
+            topScroll.current.style.display = 'none';
         }
     }
 
@@ -33,7 +33,7 @@ function Feets () {
                 <p>Designed & Developed by <a href="https://www.facebook.com/dreamsite.dev/" target="_blank" rel="noreferrer" id="dreamsite">DreamSite Dev</a></p>
             </div>
             <div>
-                <button id="myBtn" onClick={topFunction}><BsArrowUp /></button>
+                <button id="myBtn" onClick={topFunction} ref={topScroll} ><BsArrowUp /></button>
             </div>
         </footer>
     );

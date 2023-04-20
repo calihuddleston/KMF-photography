@@ -11,6 +11,7 @@ import featureTwo from "../assets/feature-two.png"
 import featureThree from "../assets/feature-three.png"
 import Slideshow from "../components/Slideshow";
 import Contact from "./Contact";
+import About from "./About";
 
 export default function Home () {
     return (
@@ -68,7 +69,7 @@ export default function Home () {
                     <h2 id="welcome">WELCOME, MY NAME IS <span>Mackenzie</span></h2>
                     <p id="description">I'm a self taught photographer. Learning and growing every second I possibly can! Want to learn more and hear about my story click the button below and I'll run you down memory lane!</p>
                     <div>
-                    <button id="morebtn"><a>MORE ABOUT ME</a></button>
+                    <button id="morebtn"><Link to="/about" element={<About />} className="page-links">MORE ABOUT ME</Link></button>
                     </div>
                 </div>
             </div>
