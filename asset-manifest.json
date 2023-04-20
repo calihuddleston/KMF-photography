@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.667f9acd.css",
+    "main.js": "/static/js/main.15faa8cd.js",
+    "static/js/787.1755fbc5.chunk.js": "/static/js/787.1755fbc5.chunk.js",
+    "static/media/about.png": "/static/media/about.83752a668784ff928f89.png",
+    "static/media/schedule.jpeg": "/static/media/schedule.2e4c1d467e93665ac838.jpeg",
+    "static/media/captureImg.jpeg": "/static/media/captureImg.0b5023631e62e41673fb.jpeg",
+    "static/media/couple.jpeg": "/static/media/couple.18d3996132364413f719.jpeg",
+    "static/media/wedding3.jpeg": "/static/media/wedding3.e892eafaa4ad8baa6e6c.jpeg",
+    "static/media/contactImg.jpeg": "/static/media/contactImg.fbd0eb4d4e662768a5dc.jpeg",
+    "static/media/example2.jpeg": "/static/media/example2.9e39d3416d8e4435d639.jpeg",
+    "static/media/portrait2.jpeg": "/static/media/portrait2.1236da4094e942a2ddcd.jpeg",
+    "static/media/family.jpeg": "/static/media/family.b26f5868b920d3364bda.jpeg",
+    "static/media/portrait.jpeg": "/static/media/portrait.e65fb16eac377c3e8577.jpeg",
+    "static/media/weddings-image-one.jpeg": "/static/media/weddings-image-one.cbdadf2bab6f7cb157d7.jpeg",
+    "static/media/engagement.jpg": "/static/media/engagement.8d2911c907b592dccaf4.jpg",
+    "static/media/realtalk.jpg": "/static/media/realtalk.f08988404fa3ff922c5b.jpg",
+    "static/media/shoot.jpg": "/static/media/shoot.8c4d01fc8f57b9fe191e.jpg",
+    "static/media/header.jpg": "/static/media/header.b2f1f44b791ecd1b2e8d.jpg",
+    "static/media/weddings-image-two.jpg": "/static/media/weddings-image-two.43c8f9ed919730896582.jpg",
+    "static/media/weddingspage.jpg": "/static/media/weddingspage.dc2e3a58812327efc7f5.jpg",
+    "static/media/camerabench.jpg": "/static/media/camerabench.89171f882d913246da88.jpg",
+    "static/media/couples.jpg": "/static/media/couples.cad324572f69ae3cf44d.jpg",
+    "static/media/logo.png": "/static/media/logo.3227bbd64a5681405031.png",
+    "static/media/feature-one.png": "/static/media/feature-one.057370e5bbb7b7b3c764.png",
+    "static/media/beach.jpg": "/static/media/beach.ecfd086cb5e529476459.jpg",
+    "static/media/beach2.jpg": "/static/media/beach2.18918dfb3bdb473235a4.jpg",
+    "static/media/feature-two.png": "/static/media/feature-two.b0ef685b74369cf31ca7.png",
+    "static/media/line.png": "/static/media/line.6dcde974c9dad89c2dd5.png",
+    "static/media/feature-three.png": "/static/media/feature-three.c070a38240eb1ed0c6ff.png",
+    "index.html": "/index.html",
+    "main.667f9acd.css.map": "/static/css/main.667f9acd.css.map",
+    "main.15faa8cd.js.map": "/static/js/main.15faa8cd.js.map",
+    "787.1755fbc5.chunk.js.map": "/static/js/787.1755fbc5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.667f9acd.css",
+    "static/js/main.15faa8cd.js"
+  ]
+}
