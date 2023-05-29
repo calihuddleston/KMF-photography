@@ -26,17 +26,6 @@ export default function Home () {
                     <p className="quote title">Family, Portrait, & Wedding Photography</p>
                 </div>
             </header>
-
-            <div id="featured">
-                <div id="featured-text">
-                    <h2 id="as-featured">As Featured In...</h2>
-                </div>
-                <div id="featured-images">
-                    <img src={featureOne} height="150px"></img>
-                    <img src={featureTwo} height="450px"></img>
-                    <img src={featureThree} height="450px;"></img>
-                </div>
-            </div>
     
             <div id="section-one">
                 <img src={beach} height="900px"></img>
@@ -74,6 +63,17 @@ export default function Home () {
                 </div>
             </div>
 
+            <div id="featured">
+                <div id="featured-text">
+                    <h2 id="as-featured">As Featured In...</h2>
+                </div>
+                <div id="featured-images">
+                    <img src={featureOne} height="150px"></img>
+                    <img src={featureTwo} height="450px"></img>
+                    <img src={featureThree} height="450px;"></img>
+                </div>
+            </div>
+        <div id="wedding-break"></div>
             <div id="section-four">
                 <div id="contact-section">
                     <p id="adventure">ARE YOU READY FOR YOUR NEXT ADVENTURE?</p>

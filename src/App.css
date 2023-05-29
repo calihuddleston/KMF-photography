@@ -71,8 +71,7 @@ h1 {
   justify-content: center;
   align-self: center;
   font-family: 'Brittany Signature', serif;
-  font-size: 25px;
-  animation: fade-in 2s linear;
+  font-size: 60px;
 }
 
 @keyframes fade-in {
@@ -219,7 +218,7 @@ header {
 
 span {
   font-family: 'Brittany Signature', sans-serif;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 #section-one {
@@ -767,11 +766,11 @@ align-items: center;
 }
 
 #weddings-section-two {
-  padding: 150px;
+  padding: 30px;
+  background-color: #B1BDB9;
 }
 
 #weddings-section-three {
-  background-color: #B1BDB9;
   padding: 30px;
 }
 
@@ -788,6 +787,20 @@ align-items: center;
   width: 800px;
   margin: 150px auto;
   font-weight: 600;
+}
+
+#wedding-footer {
+  background-color: #2f3135;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 150px;
+  font-family: 'Cormorant Garamond', serif; 
+}
+
+#wedding-break {
+  border-left: solid 1px white;
 }
 
 #count-down-header {
@@ -878,6 +891,81 @@ background-position-y: -550px;
   padding: 5px 25px;
 }
 
+#wedinvest-section-one {
+ 
+  background-color: #B1BDB9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+#wedinvest-divider {
+  border-bottom:white solid 1px;
+  margin: 40px;
+  width: 100%;
+}
+
+#wedding-dates {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 40px;
+  font-family: 'Cormorant Garamond', serif;
+  background-color:#b1bdb9b8;
+  
+}
+
+#wedinvest-section-three {
+  font-family: 'Cormorant Garamond', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+#wedinvest-section-four {
+  background-color: #B1BDB9;
+  padding: 20px;
+}
+
+#wedinvest-section-five {
+  background-color: #2f3135;
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+#wedding-talk {
+  width: 75%;
+  font-size: 20px;
+}
+
+#wedinvest-section-six {
+  background-color: #B1BDB9;
+  padding: 150px;
+}
+
+#the-vinyl {
+  padding: 50px;
+}
+
+#the-vinyl-list, #the-record-list, #the-album-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+#the-record {
+  background-color: #8D8A83;
+  padding: 50px;
+  color: white
+}
 @media screen and (max-width: 1665px) {
   #count-down-header {
     background-position-y: -350px;
@@ -899,16 +987,9 @@ background-position-y: -550px;
   }
 
   #count-text {
-    font-size: 15px;
     margin: 0px 15px;
   }
 
-  #count-title {
-    margin-bottom: 35px;
-  }
-}
-
-@media screen and (max-width: 1035px) {
   #count-down-header {
     background-position-y: -250px;
   }

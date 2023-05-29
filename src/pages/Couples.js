@@ -1,5 +1,7 @@
 import React from "react";
 import couples from "../assets/couples.jpg"
+import { Link } from "react-router-dom";
+import WeddingCarousel from "../components/WeddingSlideshow";
 
 export default function Couples () {
     return (
@@ -11,6 +13,20 @@ export default function Couples () {
                 <div id="couples-text">
                     <h2 id="couples-title">Couples</h2>
                     <p>You don't need a big, special occasion to celebrate each other and document your relationship. Pick a location and let's start planning a marvelous photoshoot.</p>
+                </div>
+            </div>
+            <div id="weddings-section-two">
+                <div>
+                    <WeddingCarousel />
+                </div>
+            </div>
+            <div id="wedding-footer">
+                <div>
+                    <Link className="page-links"><span>About Me</span> <br/> GET TO KNOW ME</Link>
+                </div>
+                <div id="wedding-break"></div>
+                <div>
+                    <Link className="page-links"><span>Contact Me</span> <br/> GET IN TOUCH</Link>
                 </div>
             </div>
         </section>

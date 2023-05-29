@@ -2,8 +2,12 @@ import React from "react";
 import weddingspage from "../assets/weddingspage.jpg"
 import weddingsImgOne from "../assets/weddings-image-one.jpeg"
 import weddingsImgTwo from "../assets/weddings-image-two.jpg"
+import WeddingCarousel from "../components/WeddingSlideshow";
+import { Link } from "react-router-dom";
 
 export default function Weddings () {
+   
+
     return (
         <section>
             <div id="weddings-section-one">
@@ -18,7 +22,7 @@ export default function Weddings () {
             {/* weddings section 2 */}
             <div id="weddings-section-two">
                 <div>
-                    <p>This is an empty spot to be filled</p>
+                    <WeddingCarousel />
                 </div>
             </div>
             <div id="weddings-section-three">
@@ -30,6 +34,18 @@ export default function Weddings () {
                 <blockquote >"For it was not into my ear you whispered, but into my heart. It was not my lips you kissed, but my soul."</blockquote>
                 <figcaption>- GABRIEL S.</figcaption>
             </figure>
+            </div>
+            <div>
+        
+            </div>
+            <div id="wedding-footer">
+                <div>
+                    <Link className="page-links"><span>About Me</span> <br/> GET TO KNOW ME</Link>
+                </div>
+                <div id="wedding-break"></div>
+                <div>
+                    <Link className="page-links"><span>Contact Me</span> <br/> GET IN TOUCH</Link>
+                </div>
             </div>
         </section>
     )
