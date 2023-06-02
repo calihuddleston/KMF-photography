@@ -1,14 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 //
-import couples1 from "../assets/couples1.jpg"
-import couples3 from "../assets/couples3.jpg"
-import couples5 from "../assets/couples5.jpeg"
-import couples6 from "../assets/couples6.jpg"
-import couples8 from "../assets/couples8.jpg"
-import couples9 from "../assets/couples9.jpg"
-import couples12 from "../assets/couples12.jpg"
-import couples13 from "../assets/couples13.jpg"
-import couples16 from "../assets/couples16.jpg"
+import { couples1, couples3, couples5, couples6, couples8, couples9, couples12, couples13, couples16} from "../assets";
 
 function CouplesCarousel() {
   return (

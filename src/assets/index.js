@@ -19,6 +19,7 @@ export * from "./investment"
 export * from "./testimonials"
 export * from "./wedinvest"
 export * from "./couples"
+export * from "./portrait"
 
 export {
     captureImg,
