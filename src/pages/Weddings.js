@@ -1,7 +1,5 @@
 import React from "react";
-import weddingspage from "../assets/weddingspage.jpg"
-import weddingsImgOne from "../assets/weddings-image-one.jpeg"
-import weddingsImgTwo from "../assets/weddings-image-two.jpg"
+import { weddingspage, weddingsImgOne, weddingsImgTwo } from "../assets";
 import WeddingCarousel from "../components/WeddingSlideshow";
 import { Link } from "react-router-dom";
 

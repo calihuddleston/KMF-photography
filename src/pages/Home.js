@@ -2,20 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom"
 import { GiFlowerPot } from "react-icons/gi"
 import { BsSuitHeart } from "react-icons/bs"
-import captureImg from "../assets/captureImg.jpeg"
-import beach from "../assets/beach.jpg"
-import contactImg from "../assets/contactImg.jpeg"
-import shoot from "../assets/shoot.jpg"
-import featureOne from "../assets/feature-one.png"
-import featureTwo from "../assets/feature-two.png"
-import featureThree from "../assets/feature-three.png"
+import {captureImg, beach, contactImg, shoot, line, featureOne, featureTwo, featureThree, featureFour} from "../assets";
 import Slideshow from "../components/Slideshow";
 import Contact from "./Contact";
 import About from "./About";
 
 export default function Home () {
     return (
-        <section>
+        <main>
             <header>
             <div>
                     <p className="quote">"A GOOD SNAPSHOT KEEPS</p>
@@ -27,8 +21,8 @@ export default function Home () {
                 </div>
             </header>
     
-            <div id="section-one">
-                <img src={beach} height="900px"></img>
+            <section id="section-one">
+                <img src={beach} width="1350px" id="test-image"></img>
                 <div id="capture">
                     <p id="three">Love. Stories. Memories.</p>
                     <img src={captureImg} height="300px"></img>
@@ -36,19 +30,20 @@ export default function Home () {
                     <span><GiFlowerPot />Capture <GiFlowerPot /></span> 
                        <p className="capture-para"> EVERY MOMENT</p>
                 </div>
-            </div>
+            </section>
 
-            <div id="section-two">
+            <section id="section-two">
                 <div id="memories">
                 <p>The thing I like about photographs, is the memories they hold. <BsSuitHeart /></p>
                 </div>
                 <Slideshow />
-            </div>
+            </section>
             <figure className="text-end block">
                 <blockquote className="blockquote quotation">"Do not follow where the path may lead. Go instead where there is no path and leave a trail."</blockquote>
                 <figcaption className="blockquote-footer author">Ralph Waldo Emerson</figcaption>
+                <img src={line} alt="" className="background-image" />
             </figure>
-            <div id="section-three">
+            <section id="section-three">
             {/* <div id="background-white"></div> */}
                 <div>
                     <img src={shoot} height="900px"></img>
@@ -61,7 +56,7 @@ export default function Home () {
                     <button id="morebtn"><Link to="/about" element={<About />} className="page-links">MORE ABOUT ME</Link></button>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <div id="featured">
                 <div id="featured-text">
@@ -70,21 +65,20 @@ export default function Home () {
                 <div id="featured-images">
                     <img src={featureOne} height="150px"></img>
                     <img src={featureTwo} height="450px"></img>
+                    <img src={featureFour} height="450px"></img>
                     <img src={featureThree} height="450px;"></img>
                 </div>
             </div>
-        <div id="wedding-break"></div>
-            <div id="section-four">
+       
+            <section id="section-four">
                 <div id="contact-section">
                     <p id="adventure">ARE YOU READY FOR YOUR NEXT ADVENTURE?</p>
             
                     <button id="contactbtn"><Link to="/contact" element={<Contact />} className="page-links">CONTACT ME</Link></button>
                   
                 </div>
-                <div>
                     <img src={contactImg} height="700px"></img>
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
     )
 }

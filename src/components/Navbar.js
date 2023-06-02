@@ -9,6 +9,9 @@ import logo from "../assets/logo.png"
 import Couples from "../pages/Couples";
 import Weddings from "../pages/Weddings";
 import WedInvest from "../pages/Wedinvest";
+import Investment from "../pages/Investment";
+import Testimonials from "../pages/Testimonials";
+import Portrait from "../pages/Portraits";
 
 export default function Navbar() {
   return (
@@ -26,7 +29,7 @@ export default function Navbar() {
           </li>
         </ul>
 
-        <img src={logo} height="150px"></img>
+        <img src={logo} height="150px" alt="Kenzie Marie Photography LLC logo"/>
 
         <ul>
           <div className="dropdowns">
@@ -37,7 +40,7 @@ export default function Navbar() {
               <div className="dropdowns-content">
                 <Link to="/couples" element={<Couples />}>COUPLES</Link>
                 <Link to="/weddings" element={<Weddings />}>WEDDINGS</Link>
-                <a>PORTRAITS</a>
+                <Link to="/portraits" element={<Portrait />}>PORTRAITS</Link>
               </div>
             </li>
           </div>
@@ -47,9 +50,9 @@ export default function Navbar() {
                 INFO <MdKeyboardArrowDown />
               </button>
               <div className="dropdowns-content">
-                <a>TESTIMONIALS</a>
-                <Link to="/wedding-investment" element={<WedInvest />}>WEDDINGS</Link>
-                <a>INVESTMENT</a>
+                <Link to="/testimonials" element={<Testimonials />}>TESTIMONIALS</Link>
+                <Link to="/wedding-investment" element={<WedInvest />}>WEDDING INVESTMENT</Link>
+                <Link to="/investment" element={<Investment />}>INVESTMENT</Link>
               </div>
             </li>
           </div>

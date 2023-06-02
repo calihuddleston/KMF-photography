@@ -1,6 +1,5 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import Timedown from "./pages/Timedown"
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About"
@@ -10,6 +9,9 @@ import Book from "./pages/Booking";
 import Couples from "./pages/Couples";
 import Weddings from "./pages/Weddings";
 import WedInvest from "./pages/Wedinvest";
+import Investment from "./pages/Investment";
+import Testimonials from "./pages/Testimonials";
+import Portrait from "./pages/Portraits";
 
 function App() {
   return (
@@ -23,7 +25,10 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/couples" element={<Couples />}></Route>
         <Route path="/weddings" element={<Weddings />}></Route>
+        <Route path="/portraits" element={<Portrait />}></Route>
+        <Route path="/testimonials" element={<Testimonials />}></Route>
         <Route path="/wedding-investment" element={<WedInvest />}></Route>
+        <Route path="/investment" element={<Investment />}></Route>
         <Route path="/booking" element={<Book />}></Route>
       </Routes>
       <Feets /> 

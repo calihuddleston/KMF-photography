@@ -1,7 +1,7 @@
 import React from "react";
-import couples from "../assets/couples.jpg"
 import { Link } from "react-router-dom";
-import WeddingCarousel from "../components/WeddingSlideshow";
+import couples from "../assets/couples.jpg";
+import CouplesCarousel from "../components/CoupleSlideshow";
 
 export default function Couples () {
     return (
@@ -15,10 +15,8 @@ export default function Couples () {
                     <p>You don't need a big, special occasion to celebrate each other and document your relationship. Pick a location and let's start planning a marvelous photoshoot.</p>
                 </div>
             </div>
-            <div id="weddings-section-two">
-                <div>
-                    <WeddingCarousel />
-                </div>
+            <div id="couples-carousel">
+                <CouplesCarousel />
             </div>
             <div id="wedding-footer">
                 <div>

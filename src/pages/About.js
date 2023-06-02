@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import about from "../assets/about.png"
-import realtalk from "../assets/realtalk.jpg"
+import {about, realtalk} from "../assets"
 import Book from "./Booking";
 
 export default function About () {
